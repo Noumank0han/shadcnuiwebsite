@@ -21,7 +21,7 @@ const Hero = () => {
                     <Image width={120} height={90} src="/img4.webp" alt="fourth image" />
                 </div>
             </div>
-            <div className="flex flex-1 justify-center items-center ">
+            <div className="hidden md:flex flex-1 justify-center items-center ">
                 <div className=" bg-[#969F95] z-0 flex justify-center items-center rounded-full h-[22rem] w-[22rem]">
                     <Image className="bg-fixed z-10" src={mainImage} alt="nouman image" />
                 </div>

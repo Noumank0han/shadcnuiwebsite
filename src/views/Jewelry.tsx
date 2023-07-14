@@ -6,9 +6,9 @@ import { Button } from '@/components/ui/button'
 const Jewelry = () => {
     return (
         <div>
-            <h1 className='flex flex-col items-center text-7xl ml-96 mt-40 mb-20'>Unique and Authentic Vintage Designer Jewellery</h1>
+            <h1 className='flex flex-col items-center text-6xl ml-96 mt-40 mb-20'>Unique and Authentic Vintage Designer Jewellery</h1>
             <div className='flex gap-20'>
-                <div className='relative'>
+                <div className='relative flex-1 w-1/2 flex flex-col gap-16'>
                     <div className='absolute z-10 flex-1 w-1/2 flex flex-col gap-16'>
                         <div className='flex gap-20'>
                             <div className='flex flex-col gap-6'>
@@ -34,6 +34,34 @@ const Jewelry = () => {
 
                     <h1 className='text-5xl text-gray-400 font-bold'>Different from Others</h1>
                 </div>
+
+                {/* <div className='relative'>
+                    <div className='absolute z-10 flex-1 w-1/2 flex flex-col gap-16'>
+                        <div className='flex gap-20'>
+                            <div className='flex flex-col gap-6'>
+                                <h2 className='font-bold text-xl'>Using Good Quality Materials</h2>
+                                <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
+                            </div>
+                            <div className='flex flex-col gap-6'>
+                                <h2 className='font-bold text-xl'>100% Handmade Products</h2>
+                                <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div className='flex gap-20'>
+                            <div className='flex flex-col gap-6'>
+                                <h2 className='font-bold text-xl'>Modern Fashion Design</h2>
+                                <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
+                            </div>
+                            <div className='flex flex-col gap-6'>
+                                <h2 className='font-bold text-xl'>Discount for Bulk Orders</h2>
+                                <p>Lorem ipsum dolor sit amt, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 className='text-5xl text-gray-400 font-bold'>Different from Others</h1>
+                </div> */}
+
                 <div className='flex-1 w-1/2 flex gap-8'>
                     <Image className='h-full w-auto object-cover' src={JewelryImg} alt="Jewelry" />
                     <div className='flex flex-col justify-center gap-6'>
