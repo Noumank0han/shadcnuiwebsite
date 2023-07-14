@@ -13,7 +13,7 @@ export default function Page({ params }: { params: { id: number } }) {
     const getDetails = Products.filter((product) => product.id == params.id)
     return (
         <div className='flex justify-start pl-20 pt-16 flex-wrap'>
-            {
+            {/* {
                 getDetails.map((product) => (
                     <div key={product.id} className="flex justify-between gap-5">
 
@@ -23,7 +23,7 @@ export default function Page({ params }: { params: { id: number } }) {
                             <h3 className="text-xl text-gray-400">{product.template}</h3>
                             <h4 className="text-sm mt-6 font-medium">SELECT SIZE</h4>
                             <div className="flex gap-2 mt-3">
-                                {/* {size.map((item) => <span key={size.indexOf(item)} className="flex rounded-full bg-gray-50 font-semibold text-sm p-2 h-8 w-8 justify-center items-center hover:shadow-xl shadow-black hover:cursor-pointer hover:bg-white">{item}</span>)} */}
+                                {size.map((item) => <span key={size.indexOf(item)} className="flex rounded-full bg-gray-50 font-semibold text-sm p-2 h-8 w-8 justify-center items-center hover:shadow-xl shadow-black hover:cursor-pointer hover:bg-white">{item}</span>)}
                             </div>
                             <Counter />
                             <div className="flex gap-2 items-center">
@@ -33,7 +33,7 @@ export default function Page({ params }: { params: { id: number } }) {
                         </div>
                     </div>
                 ))
-            }
+            } */}
             <div className="mt-20 mx-16 px-16 py-10 bg-white ">
                 <div className="relative">
                     <h3 className="flex text-2xl h-24 items-center font-bold">Product Information </h3>
