@@ -13,7 +13,7 @@ export default function Page({ params }: { params: { id: number } }) {
     const getDetails = Products.filter((product) => product.id == params.id)
     return (
         <div className='flex justify-start pl-20 pt-16 flex-wrap'>
-            {/* {
+            {
                 getDetails.map((product) => (
                     <div key={product.id} className="flex justify-between gap-5">
 
@@ -33,7 +33,7 @@ export default function Page({ params }: { params: { id: number } }) {
                         </div>
                     </div>
                 ))
-            } */}
+            }
             <div className="mt-20 mx-16 px-16 py-10 bg-white ">
                 <div className="relative">
                     <h3 className="flex text-2xl h-24 items-center font-bold">Product Information </h3>
