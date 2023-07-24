@@ -1,16 +1,22 @@
+import Wrapper from '@/components/shared/Wrapper'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 
 const Newsletter = () => {
     return (
-        <div className='flex flex-col items-center my-40'>
-            <h1 className='font-bold text-2xl'>Subscribe Our Newsletter</h1>
-            <p className='my-10'>Get the latest information and promo offers directly</p>
-            <div className='gap-2'>
-                <input className='px-4 py-2 text-gray-400 rounded-md' type="text" placeholder="Enter email address" />
-                <Button> Get Started </Button>
+        <Wrapper>
+            <div className='my-40 flex justify-center relative'>
+                <div className='flex flex-col items-center absolute z-10'>
+                    <h1 className='font-bold text-2xl'>Subscribe Our Newsletter</h1>
+                    <p className='my-8'>Get the latest information and promo offers directly</p>
+                    <div className='flex gap-2 sm:gap-5'>
+                        <input className='px-4 py-2 text-gray-400 outline outline-1' type="text" placeholder="Enter email address" />
+                        <Button> Get Started </Button>
+                    </div>
+                </div>
+                <h1 className='mt-10 sm:mt-5 font-extrabold text-7xl sm:text-8xl text-gray-200 overflow-hidden'>Newsletter</h1>
             </div>
-        </div>
+        </Wrapper>
     )
 }
 

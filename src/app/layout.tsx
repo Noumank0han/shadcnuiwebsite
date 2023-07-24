@@ -1,3 +1,4 @@
+import Footer from '@/views/Footer'
 import Navbar from '../components/layout/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -18,10 +19,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <main className='px-8 bg-gray-50'>
+        <main className=' bg-gray-50'>
           {children}
-
+          <Footer />
         </main>
+
       </body>
     </html>
   )
