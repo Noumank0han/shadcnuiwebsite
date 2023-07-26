@@ -34,7 +34,7 @@ export default function Page({ params }: { params: { id: number } }) {
                         </div>
                     ))
                 }
-                <div className="mt-20 lg:mx-16 px-16 py-10 bg-white ">
+                <div className="mt-20 mx-16 px-16 py-10 bg-white ">
                     <div className="relative">
                         <h3 className="flex text-2xl h-24 items-center font-bold">Product Information </h3>
                         <p className="absolute -z-[10] flex items-center text-gray-100  text-8xl font-bold top-0 "> Overview </p>

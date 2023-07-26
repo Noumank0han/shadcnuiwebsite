@@ -17,7 +17,7 @@ const Navbar = () => {
         <Wrapper>
             <nav className="relative flex w-full justify-between items-center h-4 sm:my-1">
                 <Link className="" href={"/"}>
-                    <Image alt="logo" src={logo} width={150} height={150} />
+                    <Image alt="logo" src={logo} width={300} height={300} />
                 </Link>
                 <div className="relative w-full flex justify-center">
                     <div className="space-x-5 hidden lg:block">
@@ -58,9 +58,9 @@ const Navbar = () => {
                         <span>All Products</span>
                     </Link>
                 </div>
-                <div className="hidden lg:flex">
-                    <Search className="bg-white rounded-l" />
-                    <input className="rounded-r px-2" type="text" placeholder="What you are looking for" />
+                <div className="hidden lg:flex outline outline-1 px-2 outline-gray-200 mr-10">
+                    <Search className="bg-white rounded-l text-gray-500 w-4" />
+                    <input className="rounded-r px-2 text-sm pr-10" type="text" placeholder="What you are looking for" />
                 </div>
                 <div className="p-4 rounded-full bg-gray-100 relative hidden lg:block">
                     <ShoppingCart className="" />

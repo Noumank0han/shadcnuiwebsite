@@ -4,7 +4,8 @@ import Image, { StaticImageData } from 'next/image'
 import AddToCart from './ui/AddToCart'
 import Link from 'next/link'
 
-function ProductCard(props: { title: string, price?: number, template?: string, img: string | StaticImageData, category?: string, id?: number, className?: string, button?: React.ReactNode }) {
+function ProductCard(props: { title: string, price?: number, template?: string, img: string | StaticImageData, category?: string, id?: number | string, className?: string, button?: React.ReactNode }) {
+    console.log("id prop value:", props.title);
     return (
         <Link href={`/products/${props.id}`} >
             <div className={"my-5 space-y-1 " + props.className}>
