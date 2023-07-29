@@ -8,7 +8,8 @@ export const Products: Product[] = [
         template: 'Sweater',
         category: 'Female',
         price: 20,
-        image: P1
+        image: P1,
+        
     },
     {
         id: 2,
@@ -16,7 +17,8 @@ export const Products: Product[] = [
         template: 'Sweater',
         category: 'Kids',
         price: 233,
-        image:  P1
+        image:  P1,
+        
 
     },
     {
@@ -25,7 +27,8 @@ export const Products: Product[] = [
         template: 'Sweater',
         category: 'Kids',
         price: 290,
-        image:  P1
+        image:  P1,
+        
 
     },
     {
@@ -34,7 +37,8 @@ export const Products: Product[] = [
         template: 'Sweater',
         category: 'Female',
         price: 2000,
-        image:  P1
+        image:  P1,
+        
 
     },
     {
@@ -43,7 +47,8 @@ export const Products: Product[] = [
         template: 'Sweater',
         category: 'Female',
         price: 220,
-        image:  P1
+        image:  P1,
+        
 
     },
     {
@@ -52,7 +57,8 @@ export const Products: Product[] = [
         template: 'Sweater',
         category: 'Male',
         price: 202,
-        image:  P1
+        image:  P1,
+        
 
     },
     {
@@ -61,7 +67,8 @@ export const Products: Product[] = [
         template: 'Sweater',
         category: 'Male',
         price: 2020,
-        image:  P1
+        image:  P1,
+        
 
     },
     {
@@ -70,7 +77,8 @@ export const Products: Product[] = [
         template: 'Sweater',
         category: 'Male',
         price: 2092,
-        image:  P1
+        image:  P1,
+        
     }
     
 ];

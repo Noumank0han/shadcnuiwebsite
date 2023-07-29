@@ -12,10 +12,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import ImagesHover from '@/components/ImagesHover'
 
 
 const ProductList = () => {
     const productChunks = Products.slice(0, 5);
+
     return (
         <Wrapper>
             <div className='flex flex-col items-center w-full'>
@@ -30,7 +32,9 @@ const ProductList = () => {
                     >
                         {productChunks.map((product) => (
                             <SwiperSlide key={product.id}>
+
                                 <ProductCard
+                                    id={product.id}
                                     className='flex flex-col items-center transition-transform transform-gpu hover:scale-110'
                                     img={product.image}
                                     title={product.name}

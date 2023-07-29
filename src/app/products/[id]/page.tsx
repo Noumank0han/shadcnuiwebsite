@@ -13,10 +13,10 @@ export default function Page({ params }: { params: { id: number } }) {
     const getDetails = Products.filter((product) => product.id == params.id)
     return (
         <Wrapper>
-            <div className='flex justify-start pl-20 pt-16 flex-wrap'>
+            <div className='flex justify-start  pt-16 flex-wrap'>
                 {
                     getDetails.map((product) => (
-                        <div key={product.id} className="flex flex-col lg:flex-row justify-between gap-5">
+                        <div key={product.id} className="flex flex-col pl-20 lg:flex-row justify-between gap-5">
                             <ImagesHover />
                             <div className="mt-20">
                                 <h1 className="text-3xl ">{product.name}</h1>
@@ -36,8 +36,8 @@ export default function Page({ params }: { params: { id: number } }) {
                 }
                 <div className="mt-20 mx-16 px-16 py-10 bg-white ">
                     <div className="relative">
-                        <h3 className="flex text-2xl h-24 items-center font-bold">Product Information </h3>
-                        <p className="absolute -z-[10] flex items-center text-gray-100  text-8xl font-bold top-0 "> Overview </p>
+                        <h3 className="absolute z-10 flex text-2xl h-24 items-center font-bold">Product Information </h3>
+                        <p className=" flex items-center text-gray-100  text-8xl font-bold top-0 "> Overview </p>
                     </div>
                     <hr className="mt-2 text-black-500 mb-4" />
                     <div className="flex">
@@ -54,4 +54,3 @@ export default function Page({ params }: { params: { id: number } }) {
         </Wrapper>
     )
 }
-// Completed UI
