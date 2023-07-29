@@ -60,7 +60,7 @@ const Navbar = () => {
                 </div>
                 <div className="hidden lg:flex outline outline-1 px-2 outline-gray-200 mr-10">
                     <Search className="bg-white rounded-l text-gray-500 w-4" />
-                    <input className="rounded-r px-2 text-sm pr-10" type="text" placeholder="What you are looking for" />
+                    <input className="rounded-r px-2 outline-none text-sm pr-10" type="text" placeholder="What you are looking for" />
                 </div>
                 <div className="p-4 rounded-full bg-gray-100 relative hidden lg:block">
                     <ShoppingCart className="" />
