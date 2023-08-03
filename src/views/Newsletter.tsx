@@ -7,10 +7,10 @@ const Newsletter = () => {
         <Wrapper>
             <div className='my-40 flex justify-center relative'>
                 <div className='flex flex-col items-center absolute z-10'>
-                    <h1 className='font-bold text-2xl'>Subscribe Our Newsletter</h1>
-                    <p className='my-8'>Get the latest information and promo offers directly</p>
-                    <div className='flex gap-2 sm:gap-5'>
-                        <input className='px-4 py-2 text-gray-400 outline outline-1' type="text" placeholder="Enter email address" />
+                    <h1 className='font-bold text-xl mobile:text-2xl'>Subscribe Our Newsletter</h1>
+                    <p className='my-8 text-center'>Get the latest information and promo offers directly</p>
+                    <div className='flex gap-1 mobile:gap-2 sm:gap-5'>
+                        <input className='w-40 px-1 mobile:px-4 py-2 text-gray-400 outline outline-1' type="text" placeholder="Enter email address" />
                         <Button> Get Started </Button>
                     </div>
                 </div>

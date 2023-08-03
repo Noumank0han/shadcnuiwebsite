@@ -10,23 +10,23 @@ const BelowHero = () => {
         <Wrapper>
             <div className="mt-20 ">
                 <div className="font-bold text-blue-600 flex justify-center text-sm">PROMOTIONS</div>
-                <div className="font-bold text-4xl flex justify-center my-6 ">Our promotions Events</div>
+                <div className="font-bold text-lg mobile:text-4xl flex justify-center my-6 ">Our promotions Events</div>
                 <div className="flex flex-col lg:flex-row w-full justify-center ">
                     <div className="lg:w-2/5 ">
-                        <div className="flex justify-between h-56 bg-gray-300 p-8 relative">
+                        <div className="flex justify-between h-32 mobile:h-56 bg-gray-300 p-2 mobile:p-8 relative">
                             <div className="flex flex-col justify-center lg:justify-start w-1/2">
-                                <div className="font-bold text-3xl lg:text-4xl">GET UP TO 60%</div>
-                                <div className="text-xl xl:text-2xl">For the summer season </div>
+                                <div className="font-bold text-lg mobile:text-3xl lg:text-4xl">GET UP TO 60%</div>
+                                <div className="text-sm mobile:text-xl xl:text-2xl">For the summer season </div>
                             </div>
-                            <div className="overflow-hidden absolute bottom-0 right-0 lg:-right-8 xl:right-0">
-                                <Image src={Belowhero1} alt="below img1" />
+                            <div className="overflow-hidden absolute bottom-0 -right-6 mobile:right-0 lg:-right-8 xl:right-0">
+                                <Image src={Belowhero1} className="w-40 mobile:full" alt="below img1" />
                                 {/* <Image src={/belowhero1.webp} alt={below image 1} /> */}
                             </div>
                         </div>
-                        <div className="bg-black text-white h-56 mt-3 px-14 lg:px-10 py-8 flex-col items-center justify-center">
-                            <div className="text-4xl xl:text-5xl font-bold flex justify-center m-4">Get 30% Off</div>
-                            <div className="text-base xl:text-xl flex justify-center mt-2">USE PROMO CODE</div>
-                            <span className="text-lg xl:text-2xl tracking-widest bg-slate-800 p-2 rounded-md font-semibold xl:font-bold flex justify-center m-3">DINEWEEKENDSALE</span>
+                        <div className="bg-black text-white h-32 mobile:h-56 mt-3 p-2 mobile:px-14 lg:px-10 mobile:py-8 flex-col items-center justify-center">
+                            <div className="text-2xl mobile:text-4xl xl:text-5xl font-bold flex justify-center m-1 mobile:m-4">Get 30% Off</div>
+                            <div className="text-xs mobile:text-base xl:text-xl flex justify-center mt-1 mobile:mt-2">USE PROMO CODE</div>
+                            <span className="text-base mobile:text-lg xl:text-2xl tracking-widest bg-slate-800 p-1 mobile:p-2 m-3 rounded-md font-semibold xl:font-bold flex justify-center ">DINEWEEKENDSALE</span>
                         </div>
                     </div>
                     <div className="lg:w-3/5 lg:ml-10 flex flex-col sm:flex-row justify-between sm:space-x-4 lg:space-x-10">

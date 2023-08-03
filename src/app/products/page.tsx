@@ -7,7 +7,7 @@ import { StaticImageData } from "next/image";
 const AllProducts = () => {
     return (
         <Wrapper>
-            <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-20 mt-16 '>
+            <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10 mobile:gap-20 mt-16 '>
                 {
                     Products.map((product) => (
                         <ProductCard

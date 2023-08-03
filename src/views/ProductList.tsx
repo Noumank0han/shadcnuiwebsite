@@ -22,17 +22,23 @@ const ProductList = () => {
         <Wrapper>
             <div className='flex flex-col items-center w-full'>
                 <div className='mt-20 font-bold text-blue-600 flex justify-center text-sm'>PRODUCTS</div>
-                <div className='font-bold text-4xl flex justify-center mt-6'>Check What We Have</div>
+                <div className='text-center font-bold text-4xl flex justify-center mt-6'>Check What We Have</div>
                 <div className='flex w-full justify-center mx-auto mt-10'>
                     <Swiper
                         spaceBetween={10}
-                        slidesPerView={3}
                         navigation
                         pagination={{ clickable: true }}
+                        breakpoints={{
+                            1: {
+                                slidesPerView: 1, // Show 1 slide per view on screens smaller than 640px
+                            },
+                            450: {
+                                slidesPerView: 3, // Show 3 slides per view on screens larger than or equal to 640px
+                            },
+                        }}
                     >
                         {productChunks.map((product) => (
                             <SwiperSlide key={product.id}>
-
                                 <ProductCard
                                     id={product.id}
                                     className='flex flex-col items-center transition-transform transform-gpu hover:scale-110'

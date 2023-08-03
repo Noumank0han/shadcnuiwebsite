@@ -14,6 +14,14 @@ module.exports = {
       },
     },
     extend: {
+      screens: {
+        'mobile': '300px',
+        'sm': '650px',
+        'md': '768px',
+        'lg': '1000px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

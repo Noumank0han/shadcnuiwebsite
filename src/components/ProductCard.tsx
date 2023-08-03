@@ -12,7 +12,7 @@ function ProductCard(props: { title: string, price?: number, template?: string, 
                 <Image src={props.img} alt="Image" />
                 <h1 className='text-lg font-bold'>{props.title}</h1>
                 <h1 className='text-base text-gray-500 font-bold'>{props.template}</h1>
-                <p className='text-xl font-bold'>{props.price ? "$" + props.price : null}</p>
+                <p className=' text-xl font-bold'>{props.price ? "Price: $" + props.price : null}</p>
                 <p className='text-lg font-bold'> {props.category ? "Category: " + props.category : null}</p>
                 {props.button}
             </div>

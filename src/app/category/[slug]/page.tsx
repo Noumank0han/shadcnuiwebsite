@@ -9,7 +9,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     const getCategory = Products.filter((product) => product.category === params.slug)
     return (
         <Wrapper>
-            <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-20 mt-16'>
+            <div className='grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10 mobile:gap-20 mt-16'>
                 {
                     getCategory.length > 0 ? (
                         getCategory.map((product) => (

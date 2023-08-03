@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <Wrapper>
             <div className='flex flex-col lg:flex-row my-40'>
-                <div className='flex flex-col gap-8 w-1/2 lg:w-1/4'>
+                <div className='flex flex-col gap-8 mobile:w-1/2 lg:w-1/4'>
                     <Image alt="logo" src="/Logo.webp" width={150} height={150} />
                     <p>Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</p>
                     <div className='flex gap-4'>
@@ -41,7 +41,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className='w-full h-0 text-black bg-black' />
-            <div className='flex flex-col md:flex-row gap-5 justify-around py-8'>
+            <div className='flex flex-col md:flex-row gap-1 mobile:gap-5 justify-around py-8'>
                 <div>Copyright @C 2023 Dine Market</div>
                 <div>Designed by. <strong>Weird Design Studio</strong></div>
                 <div>Code by. <strong>Nouman Khan on github</strong></div>

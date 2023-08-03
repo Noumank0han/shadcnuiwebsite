@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <Wrapper>
-            <nav className="relative flex w-full justify-between items-center h-4 sm:my-1">
+            <nav className=" relative flex w-full justify-between items-center h-4 sm:my-1">
                 <Link className="" href={"/"}>
                     <Image alt="logo" src={logo} width={300} height={300} />
                 </Link>

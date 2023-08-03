@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { id: number } }) {
             <div className='flex justify-start  pt-16 flex-wrap'>
                 {
                     getDetails.map((product) => (
-                        <div key={product.id} className="flex flex-col pl-20 lg:flex-row justify-between gap-5">
+                        <div key={product.id} className="flex flex-col pl-3 mobile:pl-20 lg:flex-row justify-between gap-1 mobile:gap-5">
                             <ImagesHover />
                             <div className="mt-20">
                                 <h1 className="text-3xl ">{product.name}</h1>
@@ -26,7 +26,7 @@ export default function Page({ params }: { params: { id: number } }) {
                                     {size.map((item) => <span key={size.indexOf(item)} className="flex rounded-full bg-gray-50 font-semibold text-sm p-2 h-8 w-8 justify-center items-center hover:shadow-xl shadow-black hover:cursor-pointer hover:bg-white">{item}</span>)}
                                 </div>
                                 <Counter />
-                                <div className="flex gap-2 items-center">
+                                <div className="flex gap-1 mobile:gap-2 items-center">
                                     <AddToCart />
                                     <span className="font-bold text-2xl">${product.price.toFixed(2)}</span>
                                 </div>
@@ -34,19 +34,19 @@ export default function Page({ params }: { params: { id: number } }) {
                         </div>
                     ))
                 }
-                <div className="mt-20 mx-16 px-16 py-10 bg-white ">
+                <div className="mt-4 mobile:mt-20 mx-2 mobile:mx-16 px-2 mobile:px-16 py-4 mobile:py-10 bg-white ">
                     <div className="relative">
                         <h3 className="absolute z-10 flex text-2xl h-24 items-center font-bold">Product Information </h3>
-                        <p className=" flex items-center text-gray-100  text-8xl font-bold top-0 "> Overview </p>
+                        <p className="overflow-hidden w-60 mobile:w-full flex items-center text-gray-100  text-8xl font-bold top-0 "> Overview </p>
                     </div>
                     <hr className="mt-2 text-black-500 mb-4" />
                     <div className="flex">
-                        <h4 className="text-lg font-bold mb-2 w-1/3">PRODUCT DETAILS</h4>
-                        <p className="text-gray-700 w-2/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4 className="text-base mobile:text-lg font-bold mb-2 w-24 mobile:w-1/3">PRODUCT DETAILS</h4>
+                        <p className="text-gray-700 w-2/3 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                     <div className="flex mt-5">
-                        <h4 className="text-lg font-bold mb-2 w-1/3">PRODUCT CARE</h4>
-                        <p className="text-gray-700 w-2/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolor molestiae officia accusantium culpa dignissimos consequuntur quia minima quas nam vel, voluptas earum cupiditate, cum ullam quis porro vero accusamus.</p>
+                        <h4 className="text-base mobile:text-lg font-bold mb-2 w-24 mobile:w-1/3">PRODUCT CARE</h4>
+                        <p className="text-gray-700 w-2/3 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dolor molestiae officia accusantium culpa dignissimos consequuntur quia minima quas nam vel, voluptas earum cupiditate, cum ullam quis porro vero accusamus.</p>
                     </div>
 
                 </div>
