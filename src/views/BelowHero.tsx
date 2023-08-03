@@ -10,7 +10,7 @@ const BelowHero = () => {
         <Wrapper>
             <div className="mt-20 ">
                 <div className="font-bold text-blue-600 flex justify-center text-sm">PROMOTIONS</div>
-                <div className="font-bold text-lg mobile:text-4xl flex justify-center my-6 ">Our promotions Events</div>
+                <div className="text-center font-bold text-lg mobile:text-4xl flex justify-center my-6 ">Our promotions Events</div>
                 <div className="flex flex-col lg:flex-row w-full justify-center ">
                     <div className="lg:w-2/5 ">
                         <div className="flex justify-between h-32 mobile:h-56 bg-gray-300 p-2 mobile:p-8 relative">
@@ -23,8 +23,8 @@ const BelowHero = () => {
                                 {/* <Image src={/belowhero1.webp} alt={below image 1} /> */}
                             </div>
                         </div>
-                        <div className="bg-black text-white h-32 mobile:h-56 mt-3 p-2 mobile:px-14 lg:px-10 mobile:py-8 flex-col items-center justify-center">
-                            <div className="text-2xl mobile:text-4xl xl:text-5xl font-bold flex justify-center m-1 mobile:m-4">Get 30% Off</div>
+                        <div className="bg-black text-white h-32 mobile:h-56 mt-3 p-2 px-4 mobile:px-14 lg:px-10 mobile:py-8 flex-col items-center justify-center">
+                            <div className="text-center text-2xl mobile:text-4xl xl:text-5xl font-bold flex justify-center m-1 mobile:m-4">Get 30% Off</div>
                             <div className="text-xs mobile:text-base xl:text-xl flex justify-center mt-1 mobile:mt-2">USE PROMO CODE</div>
                             <span className="text-base mobile:text-lg xl:text-2xl tracking-widest bg-slate-800 p-1 mobile:p-2 m-3 rounded-md font-semibold xl:font-bold flex justify-center ">DINEWEEKENDSALE</span>
                         </div>
