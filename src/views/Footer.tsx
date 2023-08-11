@@ -13,9 +13,15 @@ const Footer = () => {
                     <Image alt="logo" src="/Logo.webp" width={150} height={150} />
                     <p>Small, artisan label that offers a thoughtfully curated collection of high quality everyday essentials made.</p>
                     <div className='flex gap-4'>
-                        <Twitter />
-                        <Facebook />
-                        <Linkedin />
+                        <div className="bg-gray-200 p-2 rounded-md">
+                            <Twitter className="text-black fill-black w-5" />
+                        </div>
+                        <div className="bg-gray-200 p-2 rounded-md">
+                            <Facebook className="text-black fill-black w-5" />
+                        </div>
+                        <div className="bg-gray-200 p-2 rounded-md">
+                            <Linkedin className="text-black fill-black w-5" />
+                        </div>
                     </div>
                 </div>
                 <div className='flex flex-col lg:flex-row gap-3 mt-5 lg:mt-0 w-full justify-around'>

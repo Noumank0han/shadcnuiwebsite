@@ -32,7 +32,7 @@ const ProductList = () => {
                             1: {
                                 slidesPerView: 1, // Show 1 slide per view on screens smaller than 640px
                             },
-                            450: {
+                            451: {
                                 slidesPerView: 3, // Show 3 slides per view on screens larger than or equal to 640px
                             },
                         }}
